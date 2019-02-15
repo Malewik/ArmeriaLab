@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+.flex-row{
+	display: flex;
+	flex-direction: row;
+}
+.flex-column{
+	display: flex;
+	flex-direction: column;
+}
+.back{
+	position: absolute;
+	opacity: 0.5;
+}
+.site-wrapper{
+	background: url(./background.png),linear-gradient(to bottom right, #7c5ac4, #995fb6);
+	background-size: cover;
+	padding: 75px 0 50px 115px;
+}
+header{
+	justify-content: space-between;
+	height: 75px;
+}
+.header-leftSide{
+}
+.header-leftSide>img{
+	
+}
+.header-leftSide>span{
+	margin-left: 15px;
+	color:#fff;
+	font: 900 24px 'Roboto';
+	line-height: 25px;
+}
+.header-rightSide{
+	width: 1150px;
+	margin-left: auto;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 37.5px 0 0 37.5px;
+	align-items: center;
+}
+.header-menu{
+	font: 700 24px 'Roboto';
+}
+.header-menu>span{
+	margin-left: 55px;
+}
+.header-menu>span:not(:nth-child(1)){
+	text-decoration: underline;
+	margin-left: 63px;
+	cursor: pointer;
+}
+.header-menu>span:nth-child(2){
+ color: #74b65f;
+}
+.content-wrapper{
+	display: flex;
+}
+form{
+	max-width: 1045px;
+	margin-top: 50px;
+	background: #fff;
+	border-radius: 30px;
+}
+form>div{
+	margin: 35px 42px 40px 95px;
+}
+form>div>div{
+	margin-top: 26px;
+}
+.form-title{
+	text-transform: uppercase;
+	font: 900 36px 'Roboto';
+	line-height: 37px;
+	padding-top: 31px;
+}
+.formSpan-rLight{
+	font: 300 18px 'Roboto';
+}
+.formSpan-rLight-last{
+	font: 300 24px 'Roboto';
+}
+.btn-submit{
+	width: 281px;
+	height: 65px;
+	margin: 40px 0;
+	border-radius: 23.5px;
+	border-style: none;
+	background-color: #626262;
+	color: #fff;
+	font: 900 30px 'Roboto';
+	outline:none;
+	cursor: pointer;
+}
+input[type="date"],input[type="number"],input[type="text"], select{
+	width: 213px;
+	height: 40px;
+	border-radius: 23.5px;
+	resize: none;
+	margin-top: 9px;
+	outline: none;
+	font: 900 30px 'Roboto';
+	text-align: center;
+	text-align-last: center; 
+}
+select{
+	 cursor: pointer;
+}
+input[type="date"]::-webkit-inner-spin-button,input[type="number"]::-webkit-inner-spin-button { display: none; }
+input[type="date"]::-webkit-calendar-picker-indicator { display: none; }
+input[type="date"]::-webkit-clear-button {display: none; }
+.formSpan-rMedium{
+	font: 500 18px 'Roboto';
+}
+.term-of-deposit{
+	margin-left: 74px;
+}
+.automatic-renewal{
+	margin-left: 76px;
+}
+.deposit-amount{
+margin-top: 28px;
+
+}
+.deposit-replenishment{
+margin-top: 36px;
+
+}
+.amount-per-month{
+margin-top: 24px;
+
+}
+.final-deposit{
+margin-top: 40px;
+
+}
+input[type=radio]{
+	display:none;
+}
+label{
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 52px;
+	margin-top: 4px;
+	font: 500 30px 'Roboto';
+}
+label:before{
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  margin: 4px;
+  border-radius: 100%;
+}
+input[type=radio]:checked + label:before{
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	content: "";
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  background-color: #000;
+  border-style: solid;
+  border-radius: 100%;
+}
+input[type=radio]:checked + label{
+	font: 900 30px 'Roboto';
+}
+.radio-circle{
+
+	margin-top: 8px;
+	position: relative;
+	width: 43px;
+	height: 43px;
+	border: 1px solid #000;
+	border-radius: 100%;
+}
+.radio-wrapper>div:nth-child(2){
+	margin-left: 100px;
+}
+.final-deposit-value{
+	font: 900 72px 'Roboto';	
+	margin-left: 37px;
+	margin-top: -15px;
+}
+.range{
+	margin: 36px 0 0 75px;
+}
+input[type=range]{
+	width: 431px;
+	outline: none;
+	margin-top: 10px;
+}
+footer{
+	margin-top: 40px;
+	width: 100%;
+	justify-content: space-between
+}
+.footer-menu{
+	width: 920px;
+	font: 700 24px 'Roboto';	
+	color: #fff;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footer-menu>div>span:nth-child(2){
+	margin-left: 69px;
+	margin-right: 79px;
+}
+.we-are-anonymous{
+	margin-right: 115px;
+	font: 300 24px 'Roboto';	
+	color: #fff;
+}
+#deposit-amount-range,#amount-per-month-range{
+	height: 0px;
+}
+input[type=range]{
+	width: 431px;
+	outline: none;
+}
+input[type=number],select{
+  -moz-appearance: textfield;
+}
+input[type=range]::-webkit-slider-runnable-track{
+	width: 420px;
+	height: 0px;
+	cursor: pointer;
+	color: #c4c4c4;
+}
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+  border: 2px solid #000;
+  height: 30px;
+  width: 30px;
+  margin-top: -15px;
+  border-radius: 100%;
+  background: #fff;
+  cursor: pointer;
+}
+input[type=range]::-moz-range-thumb  {
+	-webkit-appearance: none;
+  border: 2px solid #000;
+  height: 30px;
+  width: 30px;
+  margin-top: -15px;
+  border-radius: 100%;
+  background: #fff;
+  cursor: pointer;
+}
+input[type=range] {
+  -webkit-appearance: none; 
+  width: 420px; 
+  background: transparent; 
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+#mini-menu{
+	position: relative;
+	display: none;
+	margin-top: 10px;
+	margin-right: 25px;
+}
+.sandwich{
+	position: relative;
+	width: 72px;
+	height: 52px;
+	cursor:pointer;
+}
+.sandwichLine{
+	position: absolute;
+	width: 72px;
+	height: 8px;
+	display: block;
+	background-color: #fff;
+}
+.sandwichLineTop{
+	top: 0px;
+}
+.sandwichLineMiddle{
+	top: 22px;
+}
+.sandwichLineBottom{
+	top: 44px;
+}
+.display-menu{
+	position: absolute;
+	left: -265px;
+	display: none;
+	background: #fff;
+	border: 1px solid;
+	border-radius: 15px;
+	width: 300px;
+	font: 700 24px 'Roboto';
+	padding: 20px;
+}
+.display-menu>span:not(:nth-child(1)){
+	text-decoration: underline;
+	cursor: pointer;
+}
+.display-menu>span:nth-child(2){
+ color: #74b65f;
+}
+#mini-menu:hover .display-menu, .display-menu:hover{
+	display: flex;
+}
+@media screen and (max-width: 750px){
+	.header-rightSide{
+		display: none;
+	}
+	#mini-menu{
+		display:block;
+	}
+	form{
+		width: 692px;
+		background: #fff;
+	}
+	.site-wrapper{
+		padding: 70px 29px 30px 29px;
+		background: url(./mobile-background.png),linear-gradient(to bottom right, #7c5ac4, #995fb6);
+		background-size: cover;
+	}
+	.mobile-flex-column{
+		display:flex;
+		flex-direction:column;
+	}
+	.automatic-renewal{
+		margin-left: 0px;
+		margin-top: 44px;
+	}
+	.range{
+		margin: 36px 0 0 0px;
+	}
+	form>div{
+		margin: 43px 51px 0 48px;
+	}
+	footer{
+		margin-top: 330px;
+		width: 100%;
+	}
+	.footer-menu{
+		width: 100%;
+	}
+	.we-are-anonymous{
+		margin-right: 0;
+		margin-left: auto;
+		margin-top: 70px;
+	}
+	.footer-menu>span{
+		margin-top: 60px;
+	}
+
+}
